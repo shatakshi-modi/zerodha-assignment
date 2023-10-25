@@ -1,0 +1,19 @@
+{
+  "name": "assignment-zerodha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"cd client && yarn serve\" \"cd server && nodemon server.mjs\"",
+    "client": "cd client && yarn serve",
+    "server": "cd server && node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "lightweight-charts": "^4.1.0",
+    "vue-toast-notification": "^3.1.1"
+  }
+}
