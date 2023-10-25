@@ -70,7 +70,7 @@ export default {
   methods: {
     async fetchData() {
       try {
-        const apiUrl = `${process.env.VUE_APP_API_URL}/api/search?symbol=${this.symbol}&period=${this.frequency}`;
+        const apiUrl = `${process.env.VUE_APP_API_URL}/api/search?symbol=${this.symbol.toUpperCase()}&period=${this.frequency}`;
         const response = await fetch(apiUrl);
         const data = await response.json();
         if (response.status == "200") {
